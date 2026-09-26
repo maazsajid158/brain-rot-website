@@ -1,6 +1,6 @@
 // src/App.jsx
 import React, { useState, useEffect, useRef } from "react";
-import axios from "axios"; // placeholder if we later want remote images
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 // Simple cartoon avatar URLs (public domain / placeholder)
 const avatars = [
@@ -83,6 +83,7 @@ export default function App() {
           <p>{roast}</p>
         </div>
       )}
+      <SpeedInsights />
     </div>
   );
 }
