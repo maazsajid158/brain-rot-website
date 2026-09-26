@@ -1,6 +1,7 @@
 // src/App.jsx
 import React, { useState, useEffect, useRef } from "react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 
 // Simple cartoon avatar URLs (public domain / placeholder)
 const avatars = [
@@ -84,6 +85,7 @@ export default function App() {
         </div>
       )}
       <SpeedInsights />
+      <Analytics />
     </div>
   );
 }
